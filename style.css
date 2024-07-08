@@ -1,0 +1,748 @@
+:root{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(230, 218, 218);
+}
+
+/* style header part */
+.header {
+    background-color: #fff;
+}
+
+.navbar {
+    padding: 1em 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+}
+.image img{
+    width: 180px;
+}
+
+.nav-items ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 1.25em;
+}
+
+.nav-items ul li {
+    list-style: none;
+    cursor: pointer;
+
+}
+
+.nav-items ul li a span{
+    border: 1px solid rgb(100, 97, 97);
+    border-radius: 10px;
+    padding: 1px 4px;
+}
+.nav-items ul li a span:hover{
+    border: 1px solid rgb(100, 97, 97);
+    border-radius: 10px;
+    padding: 1px 4px;
+    background-color:  rgb(180, 85, 180); 
+    color: black;
+}
+.nav-items ul li a {
+    text-decoration: none;
+    color: rgb(36, 35, 35);
+    font-weight: 400;
+
+}
+
+.nav-items ul li a:hover{
+    color: rgb(180, 85, 180);
+}
+
+
+/* styling the main part */
+
+ .main{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background: linear-gradient(rgba(14, 165, 165, 0.849), rgba(14, 165, 165, 0)),
+                linear-gradient(white, white);
+    margin-top: 4em;
+    position: relative
+   
+ }
+
+.main .doctors  {
+    padding-top: 14em;
+    padding-left: 5em;
+}
+ /* styling the card part */
+ .card {
+    display: flex;
+    justify-content: space-between;
+    width: 77vw;
+    height: 54vh;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: blue;
+    margin-left: 10em;
+    position: absolute;
+    top: -4em;
+
+ } 
+
+ .doct-disc .main-heading{
+    padding-top: 1em;
+    padding-left: 0.5em;
+    font-size: 3em;
+    color: #fff;
+ }
+
+ .doct-disc .main-heading  span{
+    color: orange;
+ }
+
+ .doct-disc .desc  {
+    padding-top: 0.5em;
+    padding-left: 1em;
+   font-size: 1.2em;
+   color: #fff;
+   font-weight: 700;
+
+ }
+ .doct-disc .btm-heading{
+    padding-top: 1em;
+    padding-left: 1em;
+   font-size: 1.2em;
+   color: #fff;
+   font-weight: 700;
+ }
+
+ .doct-disc button{
+    margin-top: 1.5em;
+    margin-left: 1.5em;
+    padding: 0.8em 1em;
+    border-radius: 0.5em;
+    border: none;
+    background-color: green;
+    color: #fff;
+    cursor: pointer;
+ } 
+
+ .images img{
+    width: 500px;
+    height: 353px;
+ }
+
+ /* styling search-box */
+ 
+ .search-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 77vw;
+    height: 18vh;
+    background-color: #fff;
+    margin-left: 10em;
+    position: absolute;
+    top: 18em;
+    padding: 1em 2em;
+ }
+
+ .radio-btn{
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+ }
+
+.inputform input{
+    width: 62vw;
+    height: 7vh;
+    border-radius: 1em;
+    border: 1px solid grey;
+ }
+
+ .inputform .btn {
+    padding: 1em 2em;
+    border-radius: 1em;
+    border: none;
+    background-color: blueviolet;
+    color: #fff;
+    cursor: pointer;
+ }
+
+ /* card styling end */
+
+
+ /* styling doctors part */
+
+ .card-containers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 77vw;
+    height: 25vh;
+    margin: 2em 10em;
+    /* background-color: brown; */
+
+ }
+
+ .card-containers .cards{
+    width: 170px;
+    height: 160px;
+    background-color: azure;
+    border-radius: 8px;
+ }
+
+ .cards-image  img{
+    margin: 0.8em 2.5em;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+   
+ }
+
+.cards-detail{
+    margin: 0px 0.5em;
+}
+
+.cards-detail h4 {
+    color: blue;
+}
+.cards-detail .para-1 {
+    font-size: 16px;
+    color: grey;
+}
+
+.cards-detail .para-2 {
+    font-size: 15px;
+    color: grey;
+}
+ 
+/* Ends here */
+
+/* styling docindia part */
+
+.docindia-heading{
+    margin-left: 5em;
+}
+
+.docindia-containers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 77vw;
+    height: 25vh;
+    margin: 2em 10em;
+    /* background-color: brown; */
+}
+
+.containers {
+    width: 25.2vw;
+    height: 160px;
+    background-color: azure;
+    border-radius: 8px;
+    padding: 0.5em 1em;
+}
+.containers h3 {
+    color: blue;
+}
+.containers p {
+    padding-top: 0.8em;
+}
+
+.containers img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.containers .docimg-1{
+    margin: 0.8em 5em;
+}
+
+.containers .docimg-2{
+    margin: 2em 5em;
+}
+
+.containers .docimg-3 {
+    margin: 3em 5em;
+}
+/* ends here */
+
+/* styling doc use */
+.use-doc-section{
+    margin-left: 10em;
+  
+}
+
+
+.use-doc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em 0;
+    
+}
+
+.use-doc-disc{
+    width: 65%
+}
+.use-doc-para{
+    padding-top: 2em ;
+    font-size: 1.2em;
+}
+
+.read-btn {
+    margin-bottom: 7em;
+}
+.use-doc button{
+    margin-right: 10em;
+    padding: 0.8em 1.2em;
+    border: 2px solid blueviolet;
+    border-radius: 5px;
+    color: blueviolet;
+    font-size: 0.8em;
+}
+
+.use-doc button:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+.use-doc-ftr {
+    width: 90%;
+    font-size: 1.2em;
+    color: grey;
+}
+
+/* ends here */
+
+/* styling card-containers-2 */
+.card-containers-2{
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+    justify-content: space-between;
+    width: 77vw;
+    height: 40vh;
+    margin: 2em 10em;
+    background-color: blueviolet;
+ }
+ .doct-img img{
+    margin-left: 1em;
+    width: 350px;
+    height: 250px;
+ }
+
+.right-doc-disc{
+    margin-top: 1em;
+}
+
+.right-doc-disc p {
+    padding-top: 0.5em;
+    padding-right: 2em;
+}
+
+.right-doc-disc button {
+    margin-top: 0.8em;
+    padding: 0.5em 1em;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: blueviolet;
+}
+/* ends here */
+
+/* card container-3 styling */
+
+.card-containers-3{
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+    justify-content: space-between;
+    width: 77vw;
+    height: 6vh;
+    margin: 3em 10em;
+    /* background-color: blueviolet; */
+}
+
+.cons-btn button {
+    padding: 0.5em 1em;
+    font-size: 1em;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    background-color: #fff;
+    color: blueviolet;
+    cursor: pointer;
+}
+.cons-btn button:hover{
+    background-color: blueviolet;
+    color: #fff;
+}
+/* ends here */
+
+
+/* card-container-4 styling*/
+.card-containers-4{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 1em; */
+    width: 77vw;
+    height: 23vh;
+    margin: 0 10em;
+    /* background-color: blueviolet; */
+}
+
+.Speciality-card {
+    width: 120px;
+    height: 135px;
+    /* background-color: #fff; */
+}
+
+.Speciality-card .spec-img{
+    width: 120px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 8px ;
+
+}
+.Speciality-card .spec-img img{
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    margin: 0.5em 1em;
+    border-radius: 50%;
+}
+
+.Speciality-card .spec-disc {
+    margin: 0.2em 1em;
+}
+
+.Speciality-card .spec-disc .para{
+   font-size: 0.9em;
+}
+
+.Speciality-card .spec-disc h5 {
+    color: blueviolet;
+}
+/* ends here */
+
+
+/* card-containers -5 */
+
+.card-containers-5{
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+    width: 77vw;
+    height: 60vh;
+    margin: 3em 10em;
+    /* background-color: blueviolet; */
+}
+
+.card-containers-5 .first-part{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.card-containers-5 .first-part h1{
+    margin-top: 0.5em;
+}
+.works-part {
+    display: flex;
+    flex-direction: row;
+    gap:1em ;
+    margin-top: 1.5em;
+    margin-left: 2em;
+}
+
+.use-img img{
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.right-img-div{
+    width: 470px;
+    height: 280px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+.right-img-div-2{
+    width: 450px;
+    height: 270px;
+    border-radius: 10px;
+    background-color: blueviolet;
+    position: absolute;
+    top: 70px;
+    left: 60px;
+    z-index: 2;
+}
+.large-img img {
+    width: 460px;
+    height: 300px;
+    position: absolute;
+    z-index: 3;
+    top: -50px;
+    left: -35px;
+}
+ /* ends here */
+
+ /* doctor part styling */
+
+ .doctor{
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+    justify-content: space-around;
+    margin-top: 10em;
+    width: 100%;
+    height: 36vh;
+    background-color: blue;
+    position: relative;
+ }
+
+ .doctor-image img{
+    width: 18vw;
+    height: 50vh;
+    background-position: center;
+    position: absolute;
+    top: -6em;
+ }
+
+ .doctor-disc{
+    width: 60%;
+    padding-top: 2em;
+    color: #fff;
+ }
+
+.doctor-disc p {
+    margin-top: 1em;
+    font-size: 1.2em;
+}
+
+.doctor-disc button {
+    margin-top: 0.8em;
+    padding: 0.5em 1.5em;
+    font-size: 1.2em;
+    color: blue;
+}
+
+/* ends here */
+
+
+/* card-container-6 starts here */
+
+.card-container-6{
+    gap: 5em;
+    width: 77vw;
+    height: 70vh;
+    margin: 3em 10em;
+    /* background-color: blueviolet; */
+}
+
+.card-container-6  h1 {
+  text-align: center;
+  color: black;
+}
+
+.card-container-6 .flex-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.flex-img1 img{
+    width: 150px;
+    height: 150px;
+}
+.flex-img1 p {
+    font-size: 1.1em;
+    text-align: center;
+    padding-top: 1em;
+    color: rgb(61, 60, 60);
+    
+}
+ .flex-img1 button {
+    width: 150px;
+    font-size: 1em;
+    padding: 0.5em 0.5em;
+    margin-top: 1em;
+    background-color: rgb(73, 241, 73);
+    color: #fff;
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+}
+
+ .flex-img2 img{
+    width: 220px;
+    height: 350px
+}
+
+ .flex-img3 img{
+    width: 150px;
+}
+
+.flex-img3 p {
+    font-size: 1.1em;
+    text-align: center;
+    padding-top: 1em;
+    color: rgb(61, 60, 60);
+
+
+}
+ .flex-img3 button{
+    width: 150px;
+    font-size: 1em;
+    padding: 0.5em 0.5em;
+    margin-top: 1em;
+    background-color: rgb(73, 241, 73);
+
+    color: #fff;
+       border: none;
+       border-radius: 8px;
+       cursor: pointer;
+}
+
+.flex-img1, .flex-img2, .flex-img3{
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+}   
+ /* main part ends here */
+
+ /* main-2 part starts here */
+
+ .main-2{
+     width: 100%;
+    height: 80vh;
+    background-color: #fff; 
+    position: absolute;
+    margin-top: -2.97em;
+ }
+
+ .doctor-card{
+    width: 77vw;
+    height: 65vh;
+    margin: 3em 10em;
+    /* background-color: blueviolet; */
+ }
+
+.line{
+    width: 87.5%;
+    height: 6%;
+    position: absolute;
+    top: 0.5em;
+    left: 9em;
+    background-color: grey;
+}
+.line-1{
+    width: 89%;
+    height: 6%;
+    position: absolute;
+    top: 0.5em;
+    left: 7.5em;
+    background-color: grey;
+}
+ .flex-items {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+ }
+
+ .flex-para {
+    margin-top: 0.5em;
+ }
+/* ends here */
+
+/* footer starts here */
+.footer{
+    width: 100%;
+    height: 60vh;
+    background-color: blueviolet;
+}
+
+.footer p {
+    margin-top: 1em;
+    text-align: center;
+    color: rgb(231, 219, 219);
+}
+
+.footer-card{
+    gap: 5em;
+    width: 77vw;
+    height: 25vh;
+    margin: 3em 10em;
+}
+
+.footer-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-heading h1{
+    margin-top: 0.5em;
+}
+.footer-logo{
+    margin-top: 1em;
+    width: 100px;
+    text-align: center;
+    background-color: #fff;
+    padding: 0.5em 0.5em;
+    border-radius: 1em;
+}
+
+.footer-links{
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: row;
+    gap: 18em;
+}
+
+.footer-links h3 {
+font-size: 1.5em;
+    color: #fff;
+}
+
+.footer-links .links{
+    margin-top: 1em;
+    color: #fff;
+}
+
+.footer-links .links li{
+    margin-left: 1em;
+    margin-top: 0.5em;
+    list-style: none;
+}
+
+.footer-links .install img{
+   margin-top: 1em;
+}
+.footer .social-media-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+ .social-app {
+    font-size: 20px;
+    color: #fff;
+}
